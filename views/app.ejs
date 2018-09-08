@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>OS</title>
+      <link rel="stylesheet" href="css/os.css">
+        <link 
+href="https://fonts.googleapis.com/icon?family=Material+Icons" 
+rel="stylesheet">
+      <link 
+href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" 
+rel="stylesheet">
+   </head>
+<form class="fileupload" action="upload" 
+method="post" enctype="multipart/form-data">
+      <h1>Upload File Here</h1>
+      <input type="file" name="upfile" value="">
+      <input type="submit" />
+    </form>
+
+   <body>
+     <div class="os" id="os">
+       <div class="os-panel">
+           <div id="os-panel-btns-left">
+             <i class="material-icons 
+os-panel-menu">more_vert</i>
+           </div> <!-- left -->
+           <div id="os-panel-btns-right">
+             <i class="material-icons 
+os-panel-menu">account_circle</i>
+           </div> <!-- right -->
+       </div> <!-- Os panel -->
+       
+       <div class="desktop">
+         <img onclick="openNotepad()"
+src="root/system/apps/notepad/assets/notebook.svg" 
+alt="notepad" class="app-icon">
+       </div>
+       
+        <button style="width:60px"><input 
+type="file" id="openFile" style="opacity:0; 
+width:0">Button</button> 
+         
+       <!-- <button 
+onclick="">Add</button> 
+       <button 
+onclick="">Close</button> -->
+      
+     </div> <!-- os -->
+<div class="app-codes">
+  <span id="notepadCode"> <%= notepadCode %> </span>
+</div>
+   
+     <script src="js/libs/jquery.min.js"></script>
+     <script 
+src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" 
+integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" 
+crossorigin="anonymous"></script>
+     <script src="js/libs/touch.js"></script>
+     <script src="js/os.js"></script>
+   </body>
+</html>

@@ -1,0 +1,91 @@
+html {
+  background: #45449B;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  position: absolute;
+  z-index: 1;
+}
+
+.os {
+}
+
+.os-panel {
+  display: flex;
+  background: rgba(1,1,1,0.2);
+  height: 30px;
+  box-shadow: 0 0 15px rgba(1,1,1,0.4);
+  align-items: center;
+  padding-top: 4px;
+  padding-left: 5px;
+  padding-right: 10px;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.os-panel-menu {
+  color: white;
+}
+
+.appbar {
+  display: flex;
+  background: rgba(1,1,1,0.2);
+  align-items: center;
+  height: 40px;
+}
+
+.app-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 65px;
+  margin-left: 20px;
+  z-index: 2;
+}
+
+.close_app {
+  background: #FA685C;
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+}
+
+.curtail_app {
+  background: #FBBC37;
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+}
+
+.entire-screen_app {
+  background: #27C93A;
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+}
+
+.app-title {
+  color: white;
+  width: 128%;
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  position: absolute;
+  left: 0;
+}
+
+.app-icon {
+  height: 40px;
+}
+
+.app-codes {
+  display: none;
+}
